@@ -1,0 +1,185 @@
+html body{
+    margin: 0;
+}
+:root{
+    background: #EAAAD8;
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+header {
+    background: #CEA3DD;
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 400;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    white-space: nowrap;
+}
+img{
+    width: 280px;
+    height: 280px;
+    flex-shrink: 0;
+    border: 30px solid #F9F6DD;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+
+}
+
+section{
+    display: flex;
+    padding:30px 40px;
+    margin: 160px 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 20px;
+    background: #CEA3DD;
+    box-shadow: 4px 4px 4px 0 rgba(68, 0, 114, 0.80);
+}
+
+h2{
+    color: #FFF;
+    font-family: "Anonymous Pro";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    margin: 20px 0 20px 0;
+}
+h3{
+    color: #440072;
+    font-family: Lekton;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px 0 10px 0;
+}
+p{
+    color: #000;
+    text-align: justify;
+    font-family: Lekton;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+}
+#hakkimda {
+    display: flex;
+    flex-direction: row; /* Dikey yerine yatay dizilim sağlar */
+    align-items: flex-start; /* Yukarıdan hizalama */
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+.icerik {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.icerik p {
+    color: #440072 ;
+}
+
+footer {
+    background: #CEA3DD;
+    padding: 30px 40px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between; /* İçeriği sağa ve sola yaslayacak */
+    align-items: flex-start;
+    color: #FFF;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: 0;
+    left: 0;
+}
+
+.copyright p {
+    color: #FFF;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateX(5px);
+}
+
+.contact-item svg {
+    min-width: 24px;
+}
+
+.contact-item a {
+    color: #FFF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #440072;
+    text-decoration: underline;
+}
+
+/* Responsive tasarım için */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .copyright {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+}
