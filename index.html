@@ -13,7 +13,7 @@
 <header>
     <h1>Zülal ÖZ</h1>
     <nav>
-        <ul>
+        <ul id="menu">
             <li><a href="#hakkimda-anchor">Hakkımda</a></li>
             <li><a href="#egitim-anchor">Eğitim</a></li>
             <li><a href="#deneyim-anchor">Deneyim</a></li>
@@ -22,6 +22,13 @@
         </ul>
     </nav>
 </header>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("menu").classList.toggle("show");
+    }
+</script>
+
     <div class="mobile-menu" id="mobileMenu">
     <span class="close-menu" onclick="toggleMenu()">×</span>
     <ul>
