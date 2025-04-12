@@ -12,8 +12,15 @@
 <body>
 <header>
     <h1>Zülal ÖZ</h1>
+
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
     <nav>
-        <ul id="menu">
+        <ul>
             <li><a href="#hakkimda-anchor">Hakkımda</a></li>
             <li><a href="#egitim-anchor">Eğitim</a></li>
             <li><a href="#deneyim-anchor">Deneyim</a></li>
@@ -22,22 +29,6 @@
         </ul>
     </nav>
 </header>
-
-<script>
-    function toggleMenu() {
-        document.getElementById("menu").classList.toggle("show");
-    }
-</script>
-
-    <div class="mobile-menu" id="mobileMenu">
-    <span class="close-menu" onclick="toggleMenu()">×</span>
-    <ul>
-        <li><a href="#">Ana Sayfa</a></li>
-        <li><a href="#">Hakkımda</a></li>
-        <li><a href="#">Projeler</a></li>
-        <li><a href="#">İletişim</a></li>
-    </ul>
-</div>
 
 <div id="hakkimda-anchor" style="position: relative; top: -180px; visibility: hidden;"></div>
 </section>
@@ -132,7 +123,20 @@
     </div>
     <p>Word, Docs, Excel, Sheets, Powerpoint, Slides vb.</p>
     <div style="display: flex; align-items: center; gap: 10px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             Diller
+             İngilizce | C1
+             İspanyolca | A2
+
+             Projeler
+             Bookworms | Kütüphane ve Kitap Takip Web Uygulaması
+             Proje Yöneticisi, Front-End Developer
+             Bu projede, kütüphane yönetimini daha verimli ve sürdürülebilir hale getiren web tabanlı bir takip ve bildirim sistemi geliştirdik. Proje yöneticisi olarak süreci planladım, görevleri ekip üyeleri arasında dengeli bir şekilde dağıtarak iş akışını optimize ettim ve proje ilerleyişini takip ettim. Aynı zamanda geliştirme sürecine aktif olarak katılarak ürünün hayata geçirilmesini sağladım.
+
+             zulaloz06@gmail.com / 22290481@ogrenci.ankara.edu.tr
+        0(536) 071 8864
+        linkedin.com/in/zülal-öz/
+        github.com/Zllsbstwidth="31" height="26" viewBox="0 0 31 26" fill="none">
             <path d="M27.6915 3.62001C26.9848 2.98126 26.1457 2.47456 25.2222 2.12886C24.2987 1.78316 23.3089 1.60522 22.3093 1.60522C21.3096 1.60522 20.3198 1.78316 19.3963 2.12886C18.4728 2.47456 17.6337 2.98126 16.927 3.62001L15.4604 4.94501L13.9938 3.62001C12.5664 2.33039 10.6303 1.60589 8.6116 1.60589C6.59288 1.60589 4.65684 2.33039 3.22938 3.62001C1.80193 4.90962 1 6.65872 1 8.48251C1 10.3063 1.80193 12.0554 3.22938 13.345L4.696 14.67L15.4604 24.395L26.2248 14.67L27.6915 13.345C28.3985 12.7066 28.9593 11.9485 29.342 11.1142C29.7246 10.2799 29.9216 9.38562 29.9216 8.48251C29.9216 7.5794 29.7246 6.68514 29.342 5.85081C28.9593 5.01649 28.3985 4.25845 27.6915 3.62001Z" stroke="#440072" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     <h3>Diller</h3>
@@ -193,5 +197,7 @@
         <p>© 2025 Zülal ÖZ. Tüm hakları saklıdır.</p>
     </div>
 </footer>
+
+<script src="index.js"></script>
 </body>
 </html>
